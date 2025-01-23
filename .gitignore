@@ -1,0 +1,19 @@
+# Ignore all the .idea folder
+.idea/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pyc
+
+*.pyo
+
+*.pyd
+
+*.iml
+
+*.xml
+
+.ipynb_checkpoints/
+ 
+
+__pycache__/
+
