@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lumo_reports"
+version = "0.1.0"
+description = "Reports for the Lumo application, the core application will fetch reports from here."
+authors = ["Dennis Uhrskov"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+xlsxwriter = "3.1.9"
+pypdf = "5.0.1"
+pandas = "^2.2.3"
+sqlalchemy = "^2.0.36"
+xlwings = "^0.33.6"
+pydantic = "^2.10.5"
+openpyxl = "^3.1.5"
+reportlab = "^4.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
