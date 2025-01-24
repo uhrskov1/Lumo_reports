@@ -17,14 +17,14 @@ class ReportModel(BaseReportConfig):
         title="Report Date",
         alias="reportDate",
         description="Report date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
     beta_benchmark: Literal["HPC0", "50_50_HPC0_H0A0", "50_50_HY_Loan_EU", "HPS2"] = Field(
         "HPC0",
         title="Beta benchmark",
         alias="betaBenchmark",
         description="Beta benchmark",
-        example="HPC0"
+        json_schema_extra={"example": "HPC0"}
     )
 
     class Config:

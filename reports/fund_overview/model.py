@@ -16,21 +16,21 @@ class ReportModel(BaseReportConfig):
         title="Start Date",
         alias="startDate",
         description="Start date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
     end_date: date = Field(
         ...,
         title="End Date",
         alias="endDate",
         description="End date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
     end_of_last_year_date: date = Field(
         ...,
         title="End of Last Year Date",
         alias="endOfLastYearDate",
         description="End of last year in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
 
     class Config:

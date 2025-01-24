@@ -9,14 +9,14 @@ class ReportModel(BaseModel):
         title="Fund Name",
         alias="fundName",
         description="Fund Name",
-        example="Bæredygtige Aktier KL"
+        json_schema_extra={"example": "Bæredygtige Aktier KL"}
     )
     report_date: date = Field(
         ...,
         title="Report Date",
         alias="reportDate",
         description="Report date in YYYY-MM-DD format",
-        example="2024-11-29"
+        json_schema_extra={"example": "2024-12-16"}
     )
 
     class Config:

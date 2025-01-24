@@ -10,7 +10,7 @@ class ReportModel(BaseReportConfig):
         title="Report Date",
         alias="reportDate",
         description="Report date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
 
     class Config:

@@ -29,28 +29,28 @@ class ReportModel(BaseReportConfig):
         title="To Date",
         alias="toDate",
         description="End date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
     nav_series: constr(min_length=1) = Field(
         ...,
         title="NAV Series",
         alias="navSeries",
         description="NAV series identifier",
-        example="Net"
+        json_schema_extra={"example": "2024-12-16"}
     )
     indices: List[constr(min_length=1)] = Field(
         default_factory=list,
         title="Indices",
         alias="indices",
         description="List of index identifiers",
-        example=["HPC0", "CSWELLI"]
+        json_schema_extra={"example": ["HPC0", "CSWELLI"]}
     )
     from_date: date = Field(
         None,
         title="From Date",
         alias="fromDate",
         description="Start date in YYYY-MM-DD format",
-        example="2024-01-01"
+        json_schema_extra={"example": "2024-12-16"}
     )
     fund_comp_classes: List[constr(min_length=1)] = Field(
         default_factory=list,

@@ -14,14 +14,14 @@ class ReportModel(BaseModel):
         title="Report Date",
         alias="reportDate",
         description="Report date in YYYY-MM-DD format",
-        example="2024-12-16"
+        json_schema_extra={"example": "2024-12-16"}
     )
     waci_metric: int = Field(
         None,
         title="WACI Metric",
         alias="waciMetric",
         description="WACI Metric integer",
-        example="1"
+        json_schema_extra={"example": "1"}
     )
 
     class Config:
