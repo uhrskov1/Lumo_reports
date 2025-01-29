@@ -1,6 +1,6 @@
 from io import BytesIO
 
-from apps.backends.LumoReporting.utils.powerpoint.PowerPointBase import BasePresentation
+from utils.powerpoint.PowerPointBase import BasePresentation
 
 
 class Report:

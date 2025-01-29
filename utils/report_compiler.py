@@ -1,7 +1,7 @@
 from io import BytesIO
 from typing import Tuple
 
-from apps.backends.LumoReporting.utils.excel.ExcelReport import Report
+from utils.excel.ExcelReport import Report
 
 
 def compile_report(report: Report, export_format: str, filename: str) -> Tuple[BytesIO, str]:

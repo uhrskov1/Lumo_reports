@@ -93,7 +93,7 @@ class waci_datasource(object):
 
         db = Database(database='C4DW')
 
-        Report_WACI_sql = getPathFromMainRoot('apps', 'backends', 'LumoReporting', 'reports', 'fund_overview', 'utils', 'Report_WACI.sql')
+        Report_WACI_sql = getPathFromMainRoot('reports', 'fund_overview', 'utils', 'Report_WACI.sql')
 
         Report_WACI = db.read_sql(path=Report_WACI_sql,
                                   variables=variables,

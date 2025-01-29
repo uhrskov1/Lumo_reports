@@ -7,7 +7,7 @@ from pptx.enum.text import MSO_ANCHOR, PP_PARAGRAPH_ALIGNMENT
 from pptx.oxml.xmlchemy import OxmlElement
 from pptx.util import Inches, Pt
 
-from apps.backends.LumoReporting.utils.powerpoint.PowerPointBase import BasePresentation
+from utils.powerpoint.PowerPointBase import BasePresentation
 
 
 class BaseSlide:

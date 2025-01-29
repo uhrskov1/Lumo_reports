@@ -29,7 +29,7 @@ def PortfolioStaticData(PortfolioCode: str = None, PortfolioID: int = None) -> p
             values += [str(item)]
             replace_method += ['default']
 
-    Portfolio_StaticData_sql = getPathFromMainRoot('apps', 'backends', 'LumoReporting', 'reports', 'month_end_performance', 'utils', 'Portfolio_StaticData.sql')
+    Portfolio_StaticData_sql = getPathFromMainRoot('reports', 'month_end_performance', 'utils', 'Portfolio_StaticData.sql')
 
     PortfolioData = db.read_sql(path=Portfolio_StaticData_sql,
                                 variables=variables,
