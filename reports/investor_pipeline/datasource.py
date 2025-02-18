@@ -8,7 +8,7 @@ from reports.investor_pipeline.utils.mappings import strategy_mapping
 from reports.investor_pipeline.utils.sorting import stage_sort_order
 from UTILITIES_TO_REMOVE.Dates import getEndOfMonth_Set
 
-DATABASE_URL = "apps/backends/LumoReporting/lumo.db"
+DATABASE_URL = "lumo_reports_data.db"
 report_date = date(2024, 12, 31)
 
 
